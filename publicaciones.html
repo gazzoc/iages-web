@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Publicaciones | IAGES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-nosotros.css">
+    <style>
+        :root {
+            --azul-petroleo: #003366;
+            --azul-interactivo: #336699;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        body.experiencia {
+            background-image: url('C:/Users/gazzo/OneDrive/Documentos (1)/Página Web/img/fondo_azul_1200.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .contenido {
+            max-width: 1000px;
+            margin: 40px auto 60px;
+            padding: 0 20px;
+        }
+
+        .contenido h1 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #1d3557;
+            margin-bottom: 30px;
+        }
+
+        .bloque-area {
+            padding: 25px 0;
+            margin-bottom: 30px;
+        }
+
+        .bloque-area h2 {
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            font-size: 1.3rem;
+            color: var(--azul-petroleo);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        .bloque-area p {
+            font-weight: 300;
+            line-height: 1.7;
+            color: #2a2a2a;
+            margin-bottom: 20px;
+        }
+
+        .publicacion-item {
+            background-color: #ffffffcc;
+            border-left: 4px solid var(--azul-petroleo);
+            padding: 16px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .publicacion-item h3 {
+            margin-top: 0;
+            color: var(--azul-petroleo);
+            font-size: 1.1rem;
+        }
+
+        .publicacion-item a {
+            text-decoration: none;
+            color: var(--azul-interactivo);
+            font-weight: 400;
+        }
+
+        .publicacion-item a:hover {
+            text-decoration: underline;
+        }
+
+        header.cabecera {
+            position: fixed;
+            top: 0;
+            right:0;
+            left:0;
+            z-index: 999;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 500;
+            justify-content: flex-start;
+            padding: 10px 20px;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .menu-izq {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hamburguesa {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #1d3557;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            position: relative;
+            text-decoration: none;
+            color: var(--azul-petroleo);
+            font-weight: 300;
+            font-size: 0.95rem;
+            padding-bottom: 4px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: var(--azul-interactivo);
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:hover {
+            color: var(--azul-interactivo);
+        }
+    </style>
+</head>
+<body class="experiencia" id="top">
+    <header class="cabecera">
+        <div class="menu-izq">
+            <span class="hamburguesa" onclick="toggleMenu()">&#9776;</span>
+            <span class="logo">IAGES</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="quehacemos.html">Qué hacemos</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="analisis.html">Análisis</a></li>
+                <li><a href="publicaciones.html" class="activo">Publicaciones</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenido">
+        <div class="bloque-area">
+            <h2>Publicaciones</h2>
+            <p>En esta sección se presentan los documentos y estudios producidos por el <strong>IAGES</strong>, como parte de su labor técnica en reformas del sistema de salud, evaluación de políticas y análisis institucionales.</p>
+
+            <div class="publicacion-item">
+                <h3>Informe técnico: Simulación de RD y EMD</h3>
+                <p><strong>Tipo:</strong> Informe técnico | <strong>Fecha:</strong> Marzo 2025</p>
+                <p><strong>Autores:</strong> Equipo técnico de IAGES</p>
+                <p><strong>Entidad solicitante:</strong> Proyecto LHSS – USAID</p>
+                <p>Modelo de simulación clínica y económica para Retinopatía Diabética y Edema Macular Diabético, con escenarios diferenciados.</p>
+                <a href="docs/Informe_RD_EMD_2025.pdf" target="_blank">Ver documento</a>
+            </div>
+
+            <div class="publicacion-item">
+                <h3>Evaluación económica de intervenciones en salud visual</h3>
+                <p><strong>Tipo:</strong> Nota de política | <strong>Fecha:</strong> Enero 2024</p>
+                <p><strong>Autores:</strong> Paulina Giusti, Álvaro Córdova</p>
+                <p><strong>Entidad solicitante:</strong> Ministerio de Salud</p>
+                <p>Análisis de costo-efectividad para tamizaje y tratamiento con antiangiogénicos intravítreos.</p>
+                <a href="docs/Evaluacion_economica_salud_visual.pdf" target="_blank">Ver documento</a>
+            </div>
+
+            <div class="publicacion-item">
+                <h3>Lineamientos para financiamiento basado en desempeño</h3>
+                <p><strong>Tipo:</strong> Documento de trabajo | <strong>Fecha:</strong> Agosto 2023</p>
+                <p><strong>Autores:</strong> Gabriela Paredes, Ricardo Mena</p>
+                <p><strong>Entidad solicitante:</strong> SUSALUD</p>
+                <p>Propuesta de modelo de incentivos financieros vinculados a resultados sanitarios.</p>
+                <a href="#" target="_blank">Ver documento</a>
+            </div>
+
+            <div class="publicacion-item">
+                <h3>Revisión normativa en salud digital</h3>
+                <p><strong>Tipo:</strong> Análisis normativo | <strong>Fecha:</strong> Julio 2023</p>
+                <p><strong>Autores:</strong> Ricardo Mena</p>
+                <p><strong>Entidad solicitante:</strong> PCM / Secretaría Digital</p>
+                <p>Análisis jurídico-técnico para la adopción regulada de tecnologías de salud digital en el Perú.</p>
+                <a href="#" target="_blank">Ver documento</a>
+            </div>
+
+            <div class="publicacion-item">
+                <h3>Modelo de atención integrada para enfermedades crónicas</h3>
+                <p><strong>Tipo:</strong> Informe técnico | <strong>Fecha:</strong> Noviembre 2022</p>
+                <p><strong>Autores:</strong> Flor de María Philipps, Carolina Salas</p>
+                <p><strong>Entidad solicitante:</strong> EsSalud – Dirección de Prestaciones</p>
+                <p>Diseño conceptual y operativo de una red asistencial articulada con énfasis en continuidad del cuidado.</p>
+                <a href="#" target="_blank">Ver documento</a>
+            </div>
+
+            <div class="publicacion-item">
+                <h3>Estudio de carga económica del cáncer en el Perú</h3>
+                <p><strong>Tipo:</strong> Estudio de impacto | <strong>Fecha:</strong> Octubre 2022</p>
+                <p><strong>Autores:</strong> Midori de Habich, Álvaro Córdova</p>
+                <p><strong>Entidad solicitante:</strong> OPS / MINSA</p>
+                <p>Estimación de costos directos e indirectos asociados al cáncer desde la perspectiva del sistema de salud.</p>
+                <a href="#" target="_blank">Ver documento</a>
+            </div>
+
+            <div class="publicacion-item">
+                <h3>Hoja de ruta para la reforma del aseguramiento</h3>
+                <p><strong>Tipo:</strong> Documento estratégico | <strong>Fecha:</strong> Diciembre 2021</p>
+                <p><strong>Autores:</strong> Midori de Habich, Paulina Giusti</p>
+                <p><strong>Entidad solicitante:</strong> Presidencia del Consejo de Ministros</p>
+                <p>Documento técnico orientado a la reorganización de funciones y cobertura financiera sostenible.</p>
+                <a href="#" target="_blank">Ver documento</a>
+			</div>
+			
+<footer style="background-color: transparent; margin: 60px 0 0; padding: 0;">
+
+			<div style="background-color: #2f4f4f; width: 100vw; padding: 20px 0; text-align: center; margin-left: calc(-50vw + 50%); position: relative; left: 0;">
+				  <span style="color: #ffffff; font-size: 1.8rem; font-family: 'Georgia', serif; margin-right: 20px;">Sigue nuestras redes</span>
+				  <a href="#" style="margin: 0 4px;"><img src="img/linkedin.png" alt="LinkedIn" width="24" height="24" style="vertical-align: middle;"></a>
+				  <a href="#" style="margin: 0 4px;"><img src="img/x.png" alt="X" width="24" height="24" style="vertical-align: middle;"></a>
+				  <a href="#" style="margin: 0 4px;"><img src="img/facebook.png" alt="Facebook" width="24" height="24" style="vertical-align: middle;"></a>
+				  <a href="#" style="margin: 0 4px;"><img src="img/instagram.png" alt="Instagram" width="24" height="24" style="vertical-align: middle;"></a>
+				  <a href="#" style="margin: 0 4px;"><img src="img/youtube.png" alt="YouTube" width="24" height="24" style="vertical-align: middle;"></a>
+			</div>
+
+			<div style="background-color: #e3f1ed; padding: 40px 0; width: 100vw; margin-left: calc(-50vw + 50%); box-sizing: border-box; min-height: 100vh;">
+			 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; width: 100vw; margin-left: calc(-50vw + 50%); box-sizing: border-box;">
+
+				<!-- Columna 1 -->
+				<div style="flex: 1; min-width: 180px;">
+				  <div style="border-top: 2px solid #003366; margin-bottom: 10px;"></div>
+				  <h4 style="margin: 0 0 10px 0; color: #003366; font-size: 1.05rem;">Servicios</h4>
+				  <p style="margin: 6px 0;"><strong>Auditoría</strong></p>
+				  <p style="margin: 6px 0;"><strong>Tributación y Legal</strong></p>
+				  <p style="margin: 6px 0;"><strong>Consultoría de Negocios</strong></p>
+				</div>
+
+				<!-- Columna 2 -->
+				<div style="flex: 1; min-width: 180px;">
+				  <div style="border-top: 2px solid #003366; margin-bottom: 10px;"></div>
+				  <h4 style="margin: 0 0 10px 0; color: #003366; font-size: 1.05rem;">Publicaciones</h4>
+				  <p style="margin: 6px 0;">Notas técnicas</p>
+				  <p style="margin: 6px 0;">Estudios</p>
+				  <p style="margin: 6px 0;">Documentos estratégicos</p>
+				</div>
+
+				<!-- Columna 3 -->
+				<div style="flex: 1; min-width: 180px;">
+				  <div style="border-top: 2px solid #003366; margin-bottom: 10px;"></div>
+				  <h4 style="margin: 0 0 10px 0; color: #003366; font-size: 1.05rem;">Acerca de nosotros</h4>
+				  <p style="margin: 6px 0;"><strong>Responsabilidad Corporativa</strong></p>
+				  <p style="margin: 6px 0;"><strong>Capacitación</strong></p>
+				  <p style="margin: 6px 0;"><strong>Contáctenos</strong></p>
+				</div>
+
+				<!-- Columna 4 -->
+				<div style="flex: 1; min-width: 180px;">
+				  <div style="border-top: 2px solid #003366; margin-bottom: 10px;"></div>
+				  <h4 style="margin: 0 0 10px 0; color: #003366; font-size: 1.05rem;">Industrias</h4>
+				  <p style="margin: 6px 0;"><strong>Minería</strong></p>
+				  <p style="margin: 6px 0;"><strong>Servicios Financieros</strong></p>
+				  <p style="margin: 6px 0;"><strong>Energía</strong></p>
+				</div>
+
+				<!-- Columna 5 -->
+				<div style="flex: 1; min-width: 180px;">
+				  <div style="border-top: 2px solid #003366; margin-bottom: 10px;"></div>
+				  <h4 style="margin: 0 0 10px 0; color: #003366; font-size: 1.05rem;">Oportunidades</h4>
+				  <p style="margin: 6px 0;"><strong>Trabaja con nosotros</strong></p>
+				  <p style="margin: 6px 0;"><strong>Pasantías</strong></p>
+				</div>
+
+			 
+
+<!-- Bloque legal dentro del mismo fondo verde claro -->
+				<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ccc; margin-left: 60px; font-size: 0.85rem; color: #333;">
+				  <div style="max-width: 900px; margin: 0 auto; text-align: center; font-size: 0.85rem; color: #333;">
+				  <img src="img/logo.png" alt="Logo IAGES" style="height: 32px; vertical-align: middle; margin-bottom: 10px;">
+				  <p style="margin: 10px auto 20px; max-width: 800px;">
+					© 2025 IAGES. Todos los derechos reservados. IAGES es una institución independiente. Para más información, contáctenos.
+				  </p>
+				  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+					<a href="#" style="text-decoration: none; color: #336699;">Política de Privacidad</a>
+					<a href="#" style="text-decoration: none; color: #336699;">Términos y Condiciones</a>
+					<a href="#" style="text-decoration: none; color: #336699;">Accesibilidad</a>
+					<a href="#" style="text-decoration: none; color: #336699;">Mapa del sitio</a>
+				  </div>
+				</div>
+
+
+</footer>
+    <script>
+        function toggleMenu() {
+            alert("Aquí podría abrirse el menú lateral.");
+        }
+    </script>
+</body>
+</html>

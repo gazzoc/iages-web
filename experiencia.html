@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiencia | IAGES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-nosotros.css">
+    <style>
+        :root {
+            --azul-petroleo: #003366;
+            --azul-interactivo: #336699;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        body.experiencia {
+            background-image: url('C:/Users/gazzo/OneDrive/Documentos (1)/Página Web/img/fondo_azul_1200.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .contenido {
+            max-width: 1000px;
+            margin: 40px auto 60px;
+            padding: 0 20px;
+        }
+
+        .contenido h1 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #1d3557;
+            margin-bottom: 30px;
+        }
+
+        .bloque-area {
+            padding: 25px 0;
+            margin-bottom: 30px;
+        }
+
+        .bloque-area h2 {
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            font-size: 1.3rem;
+            color: var(--azul-petroleo);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        .bloque-area p {
+            font-weight: 300;
+            line-height: 1.7;
+            color: #2a2a2a;
+            margin-bottom: 20px;
+        }
+
+        header.cabecera {
+            position: fixed;
+            top: 0;
+			right:0;
+			left:0;
+            z-index: 999;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 500;
+            justify-content: flex-start;
+            padding: 10px 20px;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .menu-izq {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hamburguesa {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #1d3557;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            position: relative;
+            text-decoration: none;
+            color: var(--azul-petroleo);
+            font-weight: 300;
+            font-size: 0.95rem;
+            padding-bottom: 4px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: var(--azul-interactivo);
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:hover {
+            color: var(--azul-interactivo);
+        }
+		
+		footer p {
+        color: #003366;
+		}
+
+		footer h4 {
+			color: #003366;
+		}
+
+		footer a {
+			color: #336699;
+    </style>
+</head>
+<body class="experiencia" id="top">
+    <header class="cabecera">
+        <div class="menu-izq">
+            <span class="hamburguesa" onclick="toggleMenu()">&#9776;</span>
+            <span class="logo">IAGES</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="quehacemos.html">Qué hacemos</a></li>
+                <li><a href="experiencia.html" class="activo">Experiencia</a></li>
+                <li><a href="analisis.html">Análisis</a></li>
+                <li><a href="publicaciones.html">Publicaciones</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenido">
+        <div class="bloque-area">
+            <h2>Resumen institucional</h2>
+            <p>Desde su fundación en 2017, el <strong>Instituto de Análisis y Gestión (IAGES)</strong> ha acompañado procesos de reforma, diseño de políticas y fortalecimiento institucional en el sector salud, tanto a nivel nacional como subnacional. Su experiencia incluye la elaboración de marcos normativos, diseño de instrumentos técnicos, asistencia a instituciones públicas y privadas, y participación en procesos de cooperación internacional. Todas las intervenciones se desarrollan en articulación con las contrapartes, priorizando la aplicabilidad técnica, la sostenibilidad operativa y la coherencia con los marcos regulatorios vigentes.</p>
+        </div>
+
+        
+        <div class="bloque-area">
+            <h2>Instituciones con las que hemos trabajado</h2>
+
+            <p class="subtitulo"><strong>Instituciones públicas nacionales y subnacionales</strong></p>
+			<ul>
+                <li>Seguro Social de Salud – EsSalud</li>
+                <li>Ministerio de Salud del Perú (MINSA)</li>
+                <li>Superintendencia Nacional de Salud – SUSALUD</li>
+                <li>Seguro Integral de Salud – SIS y FISSAL</li>
+                <li>Presidencia del Consejo de Ministros (PCM)</li>
+                <li>Gobiernos regionales de Cusco, Piura, La Libertad y Junín</li>
+                <li>Municipalidad Metropolitana de Lima</li>
+            </ul>
+
+            <p><strong>Cooperación internacional y organismos multilaterales</strong></p>
+            <ul>
+                <li>USAID</li>
+                <li>Organización Mundial de la Salud – OMS</li>
+                <li>Universidad Johns Hopkins</li>
+                <li>Cooperación Técnica Belga</li>
+                <li>Global Financing Facility</li>
+                <li>Proyecto LHSS (USAID)</li>
+                <li>Knowledge for Development</li>
+            </ul>
+
+            <p><strong>Sector privado y otros aliados técnicos</strong></p>
+            <ul>
+                <li>Pacífico EPS</li>
+                <li>Good Hope Clinic</li>
+                <li>Johnson & Johnson</li>
+                <li>Red de Administración en Salud</li>
+                <li>SALOG</li>
+                <li>INNOVAPUCP</li>
+            </ul>
+        
+        
+        <div class="bloque-area">
+            <h2>Proyectos y consultorías destacadas</h2>
+            <table style="width:100%; border-collapse: separate; border-spacing: 8px; font-size: 0.95rem;">
+                
+                        <th style="text-align:left; padding: 8px; border-bottom: 1px solid #ccc;">Proyecto / Entidad</th>
+                        <th style="text-align:left; padding: 8px; border-bottom: 1px solid #ccc;">Año</th>
+                        <th style="text-align:left; padding: 8px; border-bottom: 1px solid #ccc;">Área temática</th>
+                        <th style="text-align:left; padding: 8px; border-bottom: 1px solid #ccc;">Resultado principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="padding: 6px;">Hoja de ruta para la reforma de EsSalud</td><td>2020</td><td>Gobernanza / Aseguramiento</td><td>Propuesta normativa para la separación de funciones y rediseño institucional</td></tr>
+                    <tr><td style="padding: 6px;">Diplomado en Seguro Universal de Salud (SUS)</td><td>2021</td><td>Formación / Aseguramiento</td><td>Diseño curricular técnico y modelo académico orientado a cuadros medios del sistema</td></tr>
+                    <tr><td style="padding: 6px;">Revisión del portafolio de planes de salud</td><td>2022</td><td>Aseguramiento / regulación</td><td>Análisis actuarial, rediseño de productos y propuesta de reorganización institucional</td></tr>
+                    <tr><td style="padding: 6px;">Estándares nacionales en nutrición hospitalaria</td><td>2023</td><td>Regulación / hospitales</td><td>Marco técnico normativo validado para implementación en hospitales públicos</td></tr>
+                    <tr><td style="padding: 6px;">Diagnóstico institucional de salud ambiental</td><td>2024</td><td>Análisis organizacional</td><td>Propuesta de mejora regulatoria y planificación multisectorial coordinada</td></tr>
+                    <tr><td style="padding: 6px;">Plan estratégico institucional – SUSALUD</td><td>2023</td><td>Gestión institucional</td><td>Evaluación de capacidades rectoras, redefinición de funciones críticas y enfoque territorial</td></tr>
+                    <tr><td style="padding: 6px;">Informe de transición y sostenibilidad – ODS 2030</td><td>2023</td><td>Política pública</td><td>Documento estratégico para organismos de cooperación multilateral</td></tr>
+                    <tr><td style="padding: 6px;">Modelos de financiamiento y compras públicas</td><td>2021–2022</td><td>Financiamiento</td><td>Asistencia técnica en mecanismos de pago, incentivos financieros y esquemas de contratación</td></tr>
+                    <tr><td style="padding: 6px;">Plan de integración funcional en redes asistenciales</td><td>2020–2021</td><td>Redes de servicios</td><td>Instrumento técnico aplicado a redes piloto en zonas rurales, en colaboración con USAID</td></tr>
+                    <tr><td style="padding: 6px;">Diseño de modelos de atención para el primer nivel</td><td>2019–2022</td><td>Atención primaria</td><td>Documento técnico y hoja de implementación escalable en regiones priorizadas</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="bloque-area">
+            <h2>Liderazgo técnico</h2>
+            <p><strong style="color: #003366; font-size: 1.1em;">Midori de Habich</strong><br>
+            Economista especializada en políticas de salud, con más de 25 años de experiencia nacional e internacional.<br>
+            Fue Ministra de Salud del Perú (2012–2014), liderando la reforma para avanzar hacia la cobertura universal, y promoviendo la transformación del aseguramiento público.<br>
+            Actualmente se desempeña como Directora Técnica Global del proyecto LHSS de USAID (2019–2025), donde lidera estrategias de financiamiento sostenible, regulación y rendición de cuentas en múltiples países.<br>
+            Previamente, dirigió proyectos USAID en Perú durante casi dos décadas (1995–2012), focalizados en fortalecimiento institucional, financiamiento y regulación.<br>
+            También fue Jefa del Departamento de Investigación Económica del Banco Central de Reserva del Perú (BCRP).<br>
+            Tiene una Maestría en Política Económica y Planificación del Instituto de Estudios Sociales (ISS) de la Universidad Erasmus de Róterdam.</p>
+
+            <p><strong style="color: #003366; font-size: 1.1em;">Paulina Giusti</strong><br>
+            Pediatra, salubrista y gestora pública con experiencia en reformas del sector salud.<br>
+            Fue Viceministra de Salud y Jefa de Gabinete del MINSA (2012–2015), participando en la implementación del Seguro Universal y la reorganización de funciones en el MINSA.<br>
+            Ha dirigido el proyecto PARSALUD II (BID–BM) enfocado en salud materno-infantil y fortalecimiento de redes regionales.<br>
+            Ha sido consultora para USAID, OPS y BID en Perú, Honduras, Colombia, Jordania y República Dominicana, brindando asistencia en aseguramiento, regulación y planificación sanitaria.<br>
+            Fue Intendenta de Regulación de la Superintendencia de EPS y Jefa del Servicio de Pediatría del Hospital Daniel A. Carrión.<br>
+            Tiene una Maestría en Salud Pública de la Universidad Johns Hopkins.</p>
+
+             <p><strong style="color: #003366; font-size: 1.1em;">Flor de María Philipps</strong><br>
+            Médico cirujano, auditora médica y especialista en gestión de servicios de salud, con más de 30 años de trayectoria.<br>
+            Ha sido Superintendente Nacional de Salud (SUSALUD), Jefa del SIS y FISSAL, así como Presidenta Ejecutiva de SISOL Salud.<br>
+            Antes fue Gerente de Servicios Hospitalarios del IPSS (actual EsSalud), Directora Ejecutiva de Gestión en Pacífico EPS, y responsable de diseño y evaluación de planes de salud en el sector privado.<br>
+            Tiene formación en auditoría, regulación sanitaria, financiamiento y gestión de riesgo.<br>
+            Cuenta con un MBA por la Universidad de Montreal, y actualmente preside la Sociedad Peruana de Evaluación en Salud (SPEAS), además de dirigir el MBA Salud en la Universidad Peruana de Ciencias Aplicadas (UPC).<br>
+            Ha asesorado procesos institucionales complejos en aseguramiento público, control de gasto médico y gobernanza regulatoria.</p>
+        </div>
+
+        <div class="bloque-area">
+            <h2>Profesionales asociados</h2>
+            <p><strong>Álvaro Córdova</strong> – Economista de la salud. Especialista en modelos de financiamiento público, simulación de impacto fiscal y evaluación económica de intervenciones. Ha trabajado con herramientas actuariales aplicadas a portafolios de aseguramiento.</p>
+            <p><strong>Carolina Salas</strong> – Médica salubrista. Experiencia en rediseño de redes integradas de servicios, referenciación clínica y organización del primer nivel. Ha participado en implementación de modelos piloto en zonas rurales.</p>
+            <p><strong>Ricardo Mena</strong> – Abogado con especialización en derecho sanitario y políticas públicas. Ha trabajado en revisión normativa, calidad regulatoria y análisis comparado de marcos institucionales en aseguramiento.</p>
+            <p><strong>Gabriela Paredes</strong> – Epidemióloga con experiencia en estudios de carga de enfermedad, vigilancia basada en riesgos y análisis de impacto en salud poblacional. Ha liderado equipos técnicos en estudios regionales.</p>
+            <p><strong>Lucía Torres</strong> – Administradora en salud. Especialista en gestión de hospitales públicos, reorganización operativa y rediseño de procesos en establecimientos de segundo nivel. Formación en proyectos y calidad.</p>
+        </div>
+
+            </div>
+			
+			<footer style="background-color: transparent; margin: 60px 0 0; padding: 0;">
+
+			<div style="background-color: #2f4f4f; width: 100vw; padding: 20px 0; text-align: center; margin-left: calc(-50vw + 50%); position: relative; left: 0;">
+				  <span style="color: #ffffff; font-size: 1.8rem; font-family: 'Georgia', serif; margin-right: 20px;">Sigue nuestras redes</span>
+				  <a href="#" style="margin: 0 4px;"><img src="img/linkedin.png" alt="LinkedIn" width="24" height="24" style="vertical-align: middle;"></a>
+				  <a href="#" style="margin: 0 4px;"><img src="img/x.png" alt="X" width="24" height="24" style="vertical-align: middle;"></a>
+				  <a href="#" style="margin: 0 4px;"><img src="img/facebook.png" alt="Facebook" width="24" height="24" style="vertical-align: middle;"></a>
+				  <a href="#" style="margin: 0 4px;"><img src="img/instagram.png" alt="Instagram" width="24" height="24" style="vertical-align: middle;"></a>
+				  <a href="#" style="margin: 0 4px;"><img src="img/youtube.png" alt="YouTube" width="24" height="24" style="vertical-align: middle;"></a>
+			</div>
+
+			<div style="background-color: #e3f1ed; padding: 40px 0; width: 100vw; margin-left: calc(-50vw + 50%); box-sizing: border-box; min-height: 100vh;">
+			 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; width: 100vw; margin-left: calc(-50vw + 50%); box-sizing: border-box;">
+
+				<!-- Columna 1 -->
+				<div style="flex: 1; min-width: 180px;">
+				  <div style="border-top: 2px solid #003366; margin-bottom: 10px;"></div>
+				  <h4 style="margin: 0 0 10px 0; color: #003366; font-size: 1.05rem;">Servicios</h4>
+				  <p style="margin: 6px 0;"><strong>Auditoría</strong></p>
+				  <p style="margin: 6px 0;"><strong>Tributación y Legal</strong></p>
+				  <p style="margin: 6px 0;"><strong>Consultoría de Negocios</strong></p>
+				</div>
+
+				<!-- Columna 2 -->
+				<div style="flex: 1; min-width: 180px;">
+				  <div style="border-top: 2px solid #003366; margin-bottom: 10px;"></div>
+				  <h4 style="margin: 0 0 10px 0; color: #003366; font-size: 1.05rem;">Publicaciones</h4>
+				  <p style="margin: 6px 0;">Notas técnicas</p>
+				  <p style="margin: 6px 0;">Estudios</p>
+				  <p style="margin: 6px 0;">Documentos estratégicos</p>
+				</div>
+
+				<!-- Columna 3 -->
+				<div style="flex: 1; min-width: 180px;">
+				  <div style="border-top: 2px solid #003366; margin-bottom: 10px;"></div>
+				  <h4 style="margin: 0 0 10px 0; color: #003366; font-size: 1.05rem;">Acerca de nosotros</h4>
+				  <p style="margin: 6px 0;"><strong>Responsabilidad Corporativa</strong></p>
+				  <p style="margin: 6px 0;"><strong>Capacitación</strong></p>
+				  <p style="margin: 6px 0;"><strong>Contáctenos</strong></p>
+				</div>
+
+				<!-- Columna 4 -->
+				<div style="flex: 1; min-width: 180px;">
+				  <div style="border-top: 2px solid #003366; margin-bottom: 10px;"></div>
+				  <h4 style="margin: 0 0 10px 0; color: #003366; font-size: 1.05rem;">Industrias</h4>
+				  <p style="margin: 6px 0;"><strong>Minería</strong></p>
+				  <p style="margin: 6px 0;"><strong>Servicios Financieros</strong></p>
+				  <p style="margin: 6px 0;"><strong>Energía</strong></p>
+				</div>
+
+				<!-- Columna 5 -->
+				<div style="flex: 1; min-width: 180px;">
+				  <div style="border-top: 2px solid #003366; margin-bottom: 10px;"></div>
+				  <h4 style="margin: 0 0 10px 0; color: #003366; font-size: 1.05rem;">Oportunidades</h4>
+				  <p style="margin: 6px 0;"><strong>Trabaja con nosotros</strong></p>
+				  <p style="margin: 6px 0;"><strong>Pasantías</strong></p>
+				</div>
+
+			 
+
+<!-- Bloque legal dentro del mismo fondo verde claro -->
+				<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ccc; margin-left: 60px; font-size: 0.85rem; color: #333;">
+				  <div style="max-width: 900px; margin: 0 auto; text-align: center; font-size: 0.85rem; color: #333;">
+				  <img src="img/logo.png" alt="Logo IAGES" style="height: 32px; vertical-align: middle; margin-bottom: 10px;">
+				  <p style="margin: 10px auto 20px; max-width: 800px;">
+					© 2025 IAGES. Todos los derechos reservados. IAGES es una institución independiente. Para más información, contáctenos.
+				  </p>
+				  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+					<a href="#" style="text-decoration: none; color: #336699;">Política de Privacidad</a>
+					<a href="#" style="text-decoration: none; color: #336699;">Términos y Condiciones</a>
+					<a href="#" style="text-decoration: none; color: #336699;">Accesibilidad</a>
+					<a href="#" style="text-decoration: none; color: #336699;">Mapa del sitio</a>
+				  </div>
+				</div>
+
+
+</footer>
+
+    <script>
+        function toggleMenu() {
+            alert("Aquí podría abrirse el menú lateral.");
+        }
+    </script>
+</body>
+</html>

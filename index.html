@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>IAGES | Instituto de Análisis y Gestión</title>
+
+    <!-- Fuente Roboto con todos los pesos -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url('img/fondo_azul_1200.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            color: #002244;
+            padding-top: 80px;
+            text-align: center;
+        }
+
+        .cabecera {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 15px 30px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ccc;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            gap: 30px;
+        }
+
+        .menu-izq {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .hamburguesa {
+            font-size: 24px;
+            cursor: pointer;
+            color: #002244;
+        }
+
+        .logo {
+            font-size: 20px;
+            color: #002244;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #002244;
+            font-weight: 300;
+            font-size: 0.95rem;
+            position: relative;
+            padding-bottom: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #007bff;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav a:hover::after,
+        nav a.activo::after {
+            width: 100%;
+        }
+
+        nav a:hover,
+        nav a.activo {
+            color: #007bff;
+            font-weight: 400;
+        }
+
+        .contenido {
+            max-width: 800px;
+            margin: 12rem auto 10rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 0.2em;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 1.4em;
+            margin-bottom: 2em;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1em;
+            color: white;
+            background-color: #002244;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #004488;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            alert("Aquí podría abrirse el menú lateral.");
+        }
+    </script>
+</head>
+<body>
+
+    <!-- CABECERA INSTITUCIONAL -->
+    <header class="cabecera">
+        <div class="menu-izq">
+            <span class="hamburguesa" onclick="toggleMenu()">&#9776;</span>
+            <span class="logo">IAGES</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="quehacemos.html">Qué hacemos</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="analisis.html">Análisis</a></li>
+                <li><a href="publicaciones.html">Publicaciones</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO CENTRAL -->
+    <div class="contenido">
+        <h1><span style="font-weight:400;">IAGES</span> – <span style="font-weight:200;">Instituto de Análisis y Gestión</span></h1>
+        <h2>Capacidades técnicas al servicio de decisiones en salud más eficientes, equitativas y sostenibles.</h2>
+        <a class="btn" href="index.html">Conozca más sobre nuestro trabajo</a>
+    </div>
+
+</body>
+</html>

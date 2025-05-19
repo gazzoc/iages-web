@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Qué hacemos | IAGES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-nosotros.css">
+    <style>
+        :root {
+            --azul-petroleo: #003366;
+            --azul-interactivo: #336699;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        body.quehacemos {
+            background-image: url('C:/Users/gazzo/OneDrive/Documentos (1)/Página Web/img/fondo_azul_1200.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .contenido {
+            max-width: 1000px;
+            margin: 40px auto 60px;
+            padding: 0 20px;
+        }
+
+        .contenido h1 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #1d3557;
+            margin-bottom: 30px;
+        }
+
+        .bloque-area {
+            padding: 25px 0;
+            margin-bottom: 30px;
+        }
+
+        .bloque-area h2 {
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    
+            font-size: 1.3rem;
+            color: var(--azul-petroleo);
+            
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        .bloque-area p {
+        font-weight: 300;
+        line-height: 1.7;
+        color: #2a2a2a;
+        margin-bottom: 20px;
+    
+            font-size: 1em;
+            line-height: 1.45;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        header.cabecera {
+            position: fixed;
+            top: 0;
+			left:0;
+			right:0;
+            z-index: 999;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 500;
+            justify-content: flex-start;
+            padding: 10px 20px;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .menu-izq {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hamburguesa {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #1d3557;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            position: relative;
+            text-decoration: none;
+            color: var(--azul-petroleo);
+            font-weight: 300;
+            font-size: 0.95rem;
+            padding-bottom: 4px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: var(--azul-interactivo);
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:hover {
+            color: var(--azul-interactivo);
+        }
+    </style>
+</head>
+<body class="quehacemos" id="top">
+    <header class="cabecera">
+        <div class="menu-izq">
+            <span class="hamburguesa" onclick="toggleMenu()">&#9776;</span>
+            <span class="logo">IAGES</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="quehacemos.html" class="activo">Qué hacemos</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="analisis.html">Análisis</a></li>
+                <li><a href="publicaciones.html">Publicaciones</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenido">
+        <h1>Qué hacemos</h1>
+<div class="indice-tecnico" style="text-align:center; margin-bottom: 30px; font-size: 0.95rem; color: #000;">
+  <a href="#gobernanza" style="color: #000;">Gobernanza</a> |
+  <a href="#fortalecimiento" style="color: #000;">Fortalecimiento</a> |
+  <a href="#financiamiento" style="color: #000;">Financiamiento</a> |
+  <a href="#aseguramiento" style="color: #000;">Aseguramiento</a>
+</div>
+
+
+        <div class="bloque-area">
+            <h2 id="gobernanza">⚖️ Gobernanza en salud</h2>
+            <p>La gobernanza en salud constituye el marco mediante el cual se definen prioridades sanitarias, se asignan recursos estratégicos y se establecen mecanismos de regulación y supervisión. Una gobernanza sólida es esencial para garantizar la transparencia, la equidad y la eficiencia en escenarios donde las decisiones institucionales influyen directamente en la capacidad de respuesta ante necesidades colectivas y demandas ciudadanas.</p>
+            <p>Desde <strong>IAGES</strong>, estructuramos mecanismos funcionales que fortalecen las capacidades rectoras de quienes lideran la planificación, implementación y evaluación de políticas sanitarias. Este trabajo se enfoca especialmente en entornos descentralizados, donde las brechas operativas requieren soluciones técnicas compatibles con los marcos normativos y funcionales existentes.</p>
+            <p>Promovemos articulaciones intersectoriales y promovemos reformas orientadas a consolidar estructuras decisionales más integradas, mejorar la preparación ante amenazas sanitarias y fortalecer los entornos institucionales en los que se definen las prioridades públicas en salud. Nuestro enfoque valora la articulación entre distintos niveles organizativos, el diseño de procesos participativos y la incorporación de prácticas de mejora continua.</p>
+            <p>Una gobernanza adecuada contribuye a generar condiciones más estables y predecibles para la toma de decisiones, reducir desigualdades y alinear las capacidades técnicas con objetivos colectivos de salud. Esto crea entornos más propicios para la colaboración entre actores diversos, públicos y no públicos, en torno a fines comunes.</p>
+        
+<p style="text-align: right; font-size: 0.85rem;">
+  <a href="#top" style="text-decoration: none; color: #003366;">↑ Volver al inicio</a>
+</p>
+
+</div>
+
+        <div class="bloque-area">
+            <h2 id="fortalecimiento">🧩 Fortalecimiento del sistema de salud</h2>
+            <p>Mejorar la capacidad operativa del aparato sanitario es clave para garantizar el acceso equitativo a servicios de calidad, especialmente en contextos donde las brechas estructurales condicionan los resultados en salud. Invertir en el funcionamiento del sistema permite no solo responder mejor ante emergencias, sino también consolidar esquemas de atención continuos, eficientes y sostenibles.</p>
+            <p>En <strong>IAGES</strong>, desplegamos asistencia metodológica para optimizar la organización de los servicios, el desempeño de laboratorios, la gestión de recursos y la coordinación entre distintos actores institucionales, tanto del sector público como de otros espacios relevantes. Este enfoque permite desarrollar intervenciones ajustadas al entorno operativo de cada jurisdicción.</p>
+            <p>Estructuramos procesos de evaluación colaborativa colaborativa y rediseño institucional con el objetivo de alcanzar una prestación de servicios más eficaz, participativa y alineada con las necesidades locales. En este trabajo, la generación de capacidades y la inclusión de actores comunitarios contribuyen a consolidar respuestas más sostenibles.</p>
+            <p>El fortalecimiento de las funciones esenciales de los prestadores y responsables sanitarios impacta positivamente en los indicadores de salud, mejora la asignación de recursos y amplía el margen de acción para innovar en modelos de atención integrados.</p>
+        
+<p style="text-align: right; font-size: 0.85rem;">
+  <a href="#top" style="text-decoration: none; color: #003366;">↑ Volver al inicio</a>
+</p>
+
+</div>
+
+        <div class="bloque-area">
+            <h2 id="financiamiento">💰 Financiamiento del sector salud</h2>
+            <p>La arquitectura financiera define no solo cuánto se invierte, sino cómo se priorizan las decisiones estratégicas y cómo se distribuyen los incentivos dentro del sistema. Un financiamiento bien diseñado permite conectar la asignación de recursos con resultados verificables, mejorar la equidad en el acceso y fortalecer los mecanismos de rendición de cuentas.</p>
+            <p>En colaboración con entidades responsables del diseño de políticas públicas, <strong>IAGES</strong> modela estrategias fiscales aplicadas orientadas a optimizar el uso de recursos fiscales. Esto incluye el análisis de costos, la elaboración de cuentas de salud y la estructuración de paquetes de beneficios según prioridades operativas y fiscales.</p>
+            <p>También implementamos programas de formación técnica especializada en instrumentos clave como presupuestos orientados a resultados y esquemas de pago por desempeño. Estas herramientas permiten alinear recursos con objetivos estratégicos y operativos, dentro y fuera del ámbito estatal.</p>
+            <p>Contar con un modelo de financiamiento robusto ayuda a anticipar necesidades futuras, reducir la exposición financiera de la población y generar márgenes para la planificación conjunta de inversiones. Esto refuerza la sostenibilidad de las iniciativas sanitarias, independientemente del tipo de institución que las gestione.</p>
+        
+<p style="text-align: right; font-size: 0.85rem;">
+  <a href="#top" style="text-decoration: none; color: #003366;">↑ Volver al inicio</a>
+</p>
+
+</div>
+
+        <div class="bloque-area">
+            <h2 id="aseguramiento">🛡️ Aseguramiento en salud</h2>
+            <p>El aseguramiento organiza la provisión financiera para que las personas accedan a servicios esenciales sin enfrentar barreras económicas desproporcionadas. Bien estructurado, permite distribuir riesgos de manera más eficiente y estabilizar el flujo de recursos hacia la atención, especialmente en poblaciones con alta vulnerabilidad financiera.</p>
+            <p><strong>IAGES</strong> trabaja de manera articulada con entidades responsables del aseguramiento para estructurar estrategias que amplíen la cobertura efectiva, refuercen la equidad y optimicen el rendimiento de los recursos. Esto incluye el diseño de paquetes de beneficios, la revisión de mecanismos de financiamiento y el uso de herramientas que vinculen pagos con desempeño.</p>
+            <p>También incorporamos soporte normativo y funcional en el desarrollo normativo, el fortalecimiento de capacidades regulatorias y la mejora de procesos administrativos vinculados a la afiliación, el seguimiento y la supervisión. Estas funciones resultan clave para mantener esquemas confiables y estables.</p>
+            <p>Un modelo de aseguramiento funcional permite planificar con mayor precisión, ordenar la relación entre entidades financiadoras y prestadoras, y reducir la dependencia del gasto directo de los hogares. Al mismo tiempo, abre espacios para enfoques colaborativos en el diseño y la implementación de políticas de protección financiera.</p>
+        </div>
+    
+
+
+<p style="text-align: right; font-size: 0.85rem;">
+  <a href="#top" style="text-decoration: none; color: #003366;">↑ Volver al inicio</a>
+</p>
+
+</div>
+
+    <script>
+        function toggleMenu() {
+            alert("Aquí podría abrirse el menú lateral.");
+        }
+    </script>
+</body>
+</html>
